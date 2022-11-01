@@ -1,0 +1,78 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 90%;
+    background-color: rgb(126, 192, 236);
+    margin: 35px auto;
+    border-radius: 10px;
+}
+h1{
+    color: rgb(9, 9, 223);
+    text-align: center;
+    cursor: pointer;
+    padding-top: 15px;
+}
+#header{
+    background-color: rgb(189, 199, 226);
+    border-radius: 10px;
+    height: 150px;
+}
+blockquote{
+    text-align: center;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+li, a{
+    margin-right: 10px;
+    text-decoration: none;
+}
+.gambar{
+    display: flex;
+    justify-content: center;
+}
+
+.gambar img{
+    width: 300px;
+    padding: 5px;
+    border-radius: 9px;
+    margin: 1px;
+}
+.burung {
+    color: rgb(9, 9, 223);
+    font-weight: bold;
+    font-size: 70px;
+}
+h3{
+    color: #000;
+    margin-left: 25px;
+    padding-top: 15px;
+}
+.koleksi, img{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+.promo, h2, h3{
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+}
+.akhir, li{
+    display: inline-block;
+    margin-right: 2px;
+    padding: 10px;
+}
+#beternak{
+    background-color: rgb(126, 192, 236);
+    width: 90%;
+    display: block;
+    margin: 30px auto;
+    border-radius: 10px;
+}
