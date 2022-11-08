@@ -1,0 +1,54 @@
+
+.navbar{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-evenly;
+}
+.satu{
+    width: 25%;
+    height: 100px;
+    background-color: yellow;
+    margin-top: 10px;
+    border: 1px solid black;
+} 
+.dua{
+    width: 70%;
+    height: 100px;
+    background-color: orangered;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+.main{
+    display: flex;
+    width: 100%;
+    height: 700px;
+    margin: 20px;
+    justify-content: space-between;
+}
+.tiga{
+    width: 25%;
+    background-color: lightgreen;
+    border: 1px solid black;
+}
+.empat{
+    width: 49%;
+    background-color: rgb(187, 184, 184);
+    margin-left: 10px;
+    border: 1px solid black;
+}
+.lima{
+    width: 20%;
+    background-color: lightseagreen;
+    margin-right: 40px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.footer{
+    width: 97%;
+    height: 100px;
+    background-color: blue;
+    margin-left: 20px;
+    border: 1px solid black;
+    margin-top: -12px;
+}
