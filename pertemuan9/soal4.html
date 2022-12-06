@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 3 : Menghitung Biaya Parkir</title>
+</head>
+
+<body>
+    <h1>Menghitung biaya parkir</h1>
+    <label for="masuk">Jam Masuk</label>
+    <input type="time" id="masuk" onkeyup="parkir()"><br><br>
+
+    <label for="keluar">Jam keluar</label>
+    <input type="time" id="keluar" onkeyup="parkir()">
+    <p>Anda Parkir selama <span id="lamaParkir">0</span> jam</p>
+    <p>dengan biaya parkir Rp. <span id="bayarParkir">0</span></p>
+
+
+    <script>
+        function parkir() {
+            let masuk = document.getElementById('masuk').value;
+            let keluar = document.getElementById('keluar').value;
+            let masukJam = Math.abs(masuk.split(':')[0]);
+            let keluarJam = Math.abs(keluar.split(':')[0]);
+            if (masuk >= keluar) {
+                jam = ((24 - masukJam) + keluarJam) * 60;
+            } else {
+                jam = (keluarJam - masukJam) * 60
+            }
+            let menit = Math.abs(keluar.split(':')[1] - masuk.split(':')[1] + jam);
+
+            let lamaParkir = menit / 60;
+            if (lamaParkir.toFixed(0) <= 2) {
+                bayarParkir = 3000
+            } else if (lamaParkir.toFixed(0) >= 3) {
+                bayarParkir = ((lamaParkir.toFixed(0) - 2) * 1000) + 3000
+            } else {
+                bayarParkir = 0;
+            }
+            // console.log(masuk, keluar, jam, menit, lamaParkir, bayarParkir)
+            document.getElementById('bayarParkir').innerHTML = bayarParkir;
+            document.getElementById('lamaParkir').innerHTML = lamaParkir;
+        }
+    </script>
+</body>
+
+</html>

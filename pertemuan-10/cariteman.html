@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cari teman</title>
+</head>
+<body>
+    <form id="frm_cari">
+        <label for="name">Cari siswa:</label>
+        <input type="text" id="name">
+        <input type="button"  value="Go" onclick="cariTeman()">
+    </form>
+
+    <hr>
+
+    <div style="padding: 15px; border: 25px solid green; width: 250px;">
+        <p>Nama yang anda cari: <span id="katacari"></span></p>
+    </div>
+
+    <script>
+        function cariTeman(){
+            let name = document.getElementById('name').value;
+            let katacari = document.getElementById('katacari');
+
+            katacari.innerHTML = name;
+
+            
+            if(name == "ahmad"){
+                console.log('Ahmad ketemu!');
+                katacari.style = "background-color: blue;"
+                
+            } else{
+                console.log('ini bukan ahmad');
+                katacari.style = "color: red;"
+            }
+        }
+    </script>
+</body>
+</html>

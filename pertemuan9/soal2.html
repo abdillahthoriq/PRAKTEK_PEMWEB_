@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung kurs rupiah</title>
+</head>
+<body>
+        <h1>Menghitung kurs rupiah</h1>
+
+        <!-- langkah 
+        1. buat inputan untuk rupiah
+        2. buat tag p untuk menampung hasil  
+        3. mendeklarasikan variabel rupiah untuk menampung nilai dari input rupiah
+        4. hitung pembagian dari variabel rupiah dibagi 14.650 lalu simpan ke variabel hasil 
+        5.append hasil pembagian ke id hasil html
+    ````-->
+        <label for="rupiah">Masukkan nilai rupiah </label>
+        <input type="number" id="rupiah" onkeyup="hitungKurs()">
+        <p>Hasil konversi ke dollar: <span id="hasil"></span></p>
+
+
+
+
+          <hr> 
+          <h2>Konversi dollar ke rupiah </h2>
+          <label for="dollar">Masukkan nilai dollar </label>
+          <input type="number" id="dollar" onkeyup="hitungKeDollar">
+          <p>Hasil Ke rupiah: <span id="hasil2"></span></p>
+        <script>
+          function hitungKeDollar(){
+            let rupiah = document.getElementById('rupiah').value;
+
+          let hasil = rupiah / 14650;
+          document.getElementById('hasil').innerHTML = hasil;
+          }
+
+          function dollarKeRupiah(){
+          let dollar = document.getElementById('dollar').value;
+
+          let hasil2 = dollar * 14650;
+          
+          document.getElementById('hasil2').innerHTML = hasil2;
+          }
+        </script>
+        
+</body>
+</html>

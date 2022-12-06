@@ -20,7 +20,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
-    height: 80vh;
+    height: 540px;
 }
 .container aside{
     background-color: #62B7B6;

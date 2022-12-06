@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 4: Menghitung Jumlah Dua Bilangan</title>
+</head>
+<body>
+    <input type="number" id="bilanganSatu" onchange="penjumlahan()"  value="0"><br>
+    <span>+</span><br>
+    <input type="number" id="bilanganDua" onchange="penjumlahan()" value="0"><br>
+    <span>=</span><br>
+    <input type="number" id="hasilBilangan" value="0">
+
+
+    <script>
+        function penjumlahan() {
+            let bilanganSatu = Math.abs(document.getElementById('bilanganSatu').value);
+            let bilanganDua = Math.abs(document.getElementById('bilanganDua').value);
+
+            let hasilBilangan = bilanganSatu + bilanganDua;
+
+            document.getElementById('hasilBilangan').value = hasilBilangan;
+            
+        }
+    </script>
+</body>
+</html>
